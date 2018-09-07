@@ -1,0 +1,42 @@
+# -*- restclient -*-
+
+#
+POST http://localhost:3000/users/login
+Accept: application/json
+Content-Type: application/json 
+
+{
+  "user" : "pacho",
+  "password" : "pepe"  
+}
+
+#
+POST http://localhost:3000/haunter/login
+Content-Type: application/json 
+
+{
+  "code": "XYZ",
+  "beaconIdent": "xxx-yyy-001"
+}
+
+# 
+POST http://localhost:3000/haunter/positions
+Content-Type: application/json 
+
+[
+  { "turnId" : 1
+  , "x" : 5.0
+  , "y" : 10.0
+  , "z" : 0
+  , "time" : "2017-06-19T08:20:54.6058714Z"
+  } ,
+  { "turnId" : 1
+  , "x" : 5.0
+  , "y" : 15.0
+  , "z" : 0
+  , "time" : "2017-06-19T08:21:00.6058714Z"
+  }]
+
+#
+GET http://localhost:3000/places/5/info
+Content-Type: application/json 

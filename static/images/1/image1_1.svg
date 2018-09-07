@@ -1,0 +1,36 @@
+<svg id="svg3336" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="68mm" width="78mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 274.94751 241.83754">
+ <metadata id="metadata3338">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="g3340" stroke-linejoin="round" stroke="#333" stroke-linecap="round" fill="none">
+  <rect id="rect3342" height="2.1e2" width="2.4e2" y="18" x="18" stroke-width="1.1"/>
+  <g id="g3344" stroke-width=".97">
+   <g id="g3346" transform="translate(-15 -4)">
+    <rect id="rect3348" y="44" width="86" height="35" x="56"/>
+    <rect id="rect3350" y="44" width="86" height="35" x="1.6e2"/>
+   </g>
+   <g id="g3352" transform="translate(-15,-2.9)">
+    <rect id="rect3354" y="1e2" width="86" height="35" x="56"/>
+    <rect id="rect3356" y="1e2" width="86" height="35" x="1.6e2"/>
+   </g>
+   <g id="g3358" transform="translate(-15,14)">
+    <rect id="rect3360" y="1.5e2" width="86" height="35" x="56"/>
+    <rect id="rect3362" y="1.5e2" width="86" height="35" x="1.6e2"/>
+   </g>
+  </g>
+ </g>
+ <g stroke-linejoin="round" stroke="#333" stroke-linecap="round" fill="#fff">
+  <path id="xxx-yyy-004" d="m1.4e2 2.2e2a4.6 4.6 0 0 1 4.4 -4.7 4.6 4.6 0 0 1 4.8 4.4 4.6 4.6 0 0 1 -4.4 4.8 4.6 4.6 0 0 1 -4.8 -4.4"/>
+  <path id="xxx-yyy-002" d="m25 1.2e2a4.6 4.6 0 0 1 4.4 -4.7 4.6 4.6 0 0 1 4.8 4.4 4.6 4.6 0 0 1 -4.4 4.8 4.6 4.6 0 0 1 -4.8 -4.4"/>
+  <path id="xxx-yyy-001" style="image-rendering:auto" d="m1.4e2 28a4.6 4.6 0 0 1 4.4 -4.7 4.6 4.6 0 0 1 4.8 4.4 4.6 4.6 0 0 1 -4.4 4.8 4.6 4.6 0 0 1 -4.8 -4.4">
+   <title id="title3370">Ibeacon A</title>
+  </path>
+  <path id="xxx-yyy-003" d="m2.4e2 1.2e2a4.6 4.6 0 0 1 4.4 -4.7 4.6 4.6 0 0 1 4.8 4.4 4.6 4.6 0 0 1 -4.4 4.8 4.6 4.6 0 0 1 -4.8 -4.4"/>
+ </g>
+</svg>

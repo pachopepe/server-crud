@@ -1,0 +1,26 @@
+User json
+    ident Text
+    password Text Maybe
+    companyId  CompanyId
+    UniqueUser ident
+    deriving (Show)
+
+Email json
+    email Text
+    userId UserId Maybe
+    verkey Text Maybe
+    UniqueEmail email
+
+Image json
+    filePath String
+    description Text
+    date UTCTime default=now()
+    deriving (Show)
+
+-- @description: Company 
+Company json
+    name Text
+    UniqueCompanyName name
+    deriving (Show)
+
+ -- By default this file is used in Model.hs

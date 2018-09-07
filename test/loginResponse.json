@@ -1,0 +1,45 @@
+{
+  "haunterTurnId": 1,
+  "checkPoints": [
+    {
+      "y": 0,
+      "x": 0,
+      "ident": "xxx-yyy-003",
+      "checkPointId": 7,
+      "name": "Supermercado",
+      "z": 0
+    },
+    {
+      "y": 0,
+      "x": 0,
+      "ident": "xxx-yyy-004",
+      "checkPointId": 8,
+      "name": "Drogueria",
+      "z": 0
+    },
+    {
+      "y": 0,
+      "x": 0,
+      "ident": "xxx-yyy-001",
+      "checkPointId": 1,
+      "name": "Plaza comidas",
+      "z": 0
+    },
+    {
+      "y": 0,
+      "x": 0,
+      "ident": "xxx-yyy-002",
+      "checkPointId": 3,
+      "name": "Entrada principal",
+      "z": 0
+    }
+  ],
+  "placeName": "Centro Comercial los Geranios"
+}
+// POST http://localhost:3000/haunter/login
+// HTTP/1.1 200 OK
+// Transfer-Encoding: chunked
+// Date: Mon, 19 Jun 2017 22:10:53 GMT
+// Server: Warp/3.2.12
+// Content-Type: application/json
+// Request duration: 0.146708s

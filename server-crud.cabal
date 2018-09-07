@@ -1,0 +1,115 @@
+name:                server-crud
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/pachopepe/server-crud#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Francisco Chaves
+maintainer:          pachopepe@gmail.com
+copyright:           2017 Francisco Chaves
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+flag dev
+    default:       False
+    description:   Turn on development settings, like auto-reload templates.
+
+flag library-only
+    default:       False
+    description:   Do not build the executable.
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Api
+                     , Api.Crud
+                     , Api.User
+                     , Api.Others
+                     , Api.Company
+                     , Api.Util
+                     , Application
+                     , Config
+                     , Model
+                     , Settings
+  build-depends:       base >= 4.7 && < 5
+                     , persistent                    >= 2.0        && < 2.7
+                     , persistent-postgresql         >= 2.1.1      && < 2.7
+                     , persistent-template           >= 2.0        && < 2.7
+                     , ghc-prim
+                     , mtl
+                     , async
+                     , monad-logger
+                     , monad-control
+                     , either
+                     , transformers
+                     , bytestring
+                     , text
+                     , time
+                     , aeson
+                     , yaml
+                     , file-embed
+                     , servant-server
+                     , natural-transformation
+                     , directory
+                     , containers                    >= 0.5.7
+                     , websockets                    >= 0.10
+                     , wai                           >= 3.0
+                     , wai-cors
+                     , wai-extra
+                     , wai-websockets                >= 3.0
+                     , warp
+
+  if flag(dev) || flag(library-only)
+        ghc-options:   -Wall -fwarn-tabs -O0
+  else
+        ghc-options:   -Wall -fwarn-tabs -O2
+
+  extensions: 
+              DataKinds
+              TemplateHaskell
+              QuasiQuotes
+              OverloadedStrings
+              MultiParamTypeClasses
+              TypeFamilies
+              GADTs
+              GeneralizedNewtypeDeriving
+              DeriveDataTypeable
+              TypeOperators
+              FlexibleContexts
+              FlexibleInstances
+              TupleSections
+              RecordWildCards
+              DuplicateRecordFields
+              CPP
+
+  default-language:    Haskell2010
+
+executable server-crud
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , server-crud
+  default-language:    Haskell2010
+
+  if flag(library-only)
+     buildable:        False
+
+test-suite server-crud-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , server-crud
+                     , hspec
+                     , hspec-wai
+                     , hspec-wai-json
+                     , aeson
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/pachopepe/server-crud
